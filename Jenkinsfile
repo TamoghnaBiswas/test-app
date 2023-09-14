@@ -13,13 +13,13 @@ pipeline {
             steps {
                 script {
                     // Build a Docker image from your Python app
-                    sh 'docker build -t your-docker-username/your-app-name:latest .'
+                    sh 'docker build -t tbiswas007/pythonapp:0.0.1 .'
 
                     // Log in to Docker Hub
-                    sh 'docker login -u your-docker-username -p your-docker-password'
+                    sh 'docker login -u tbiswas007 -p Tamoghna@b1'
 
                     // Push the Docker image to Docker Hub
-                    sh 'docker push your-docker-username/your-app-name:latest'
+                    sh 'docker push tbiswas007/pythonapp:0.0.1'
                 }
             }
         }
